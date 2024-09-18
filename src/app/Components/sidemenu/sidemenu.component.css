@@ -50,7 +50,7 @@ html, body {
 
 /* Side menu container */
 .sidemenu-container {
-    width: 50%;
+    width: 80%;
     height: calc(100vh - 60px); /* Adjusted for header height */
     background-color: aqua;
     display: flex;
