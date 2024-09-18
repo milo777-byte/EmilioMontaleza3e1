@@ -1,0 +1,38 @@
+
+<div class="header">
+    <button class="menu-btn" (click)="setVisibilityMenu()">☰ Menu</button>
+</div>
+<div class="main">
+    
+
+    <div class="sidemenu-container"
+        [style.backgroundColor]="theme"
+        [style.width]="widthMenu + '%' "
+        [style.display]="visibleMenu ? 'flex' : 'none'">
+        
+        <div class="profile-section item">
+            <img src="{{profileImageUrl}}" alt="Perfil" class="profile-img">
+            <p>{{username}}</p>
+            <button class="back-btn" (click)="setVisibilityMenu()">← Back</button>
+        </div>
+
+        <div class="menu-section item">
+            <p><span class="icon">📊</span>Dashboard</p>
+        </div>
+
+        <div class="menu-section item">
+            <p><span class="icon">👤</span>Profile</p>
+        </div>
+
+        <div class="settings-section item">
+            <button class="btn color-btn" (click)="setThemeColor('red')">Change Color</button>
+            <button class="btn size-btn" (click)="setSizeMenu()">Change Size</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="centered-text" >
+            <h1>Ejercicio 2</h1>
+        </div>
+    </div>
+</div>
